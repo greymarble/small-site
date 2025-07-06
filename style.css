@@ -1,0 +1,157 @@
+@font-face { 
+    font-family: NonstopDebate;
+    src: url(assets/fonts/NonstopDebatecounter-Regular.ttf)
+}
+/* BEM???? */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#homeAvatar {
+    transform: rotate(20deg);
+    width: 40%;
+    translate: -3% 3%;
+
+    position:relative;
+}
+
+#header {
+    background-color: cadetblue;
+    
+    height: 75vh;
+    width: 100vw;
+
+    position: relative;
+    top:0;
+}
+
+.marquee {
+    background-color: yellow;
+    height: 10%;
+    width: 100%;
+
+    position: absolute;
+
+    /* ON PARENT! NOT TEXT ITSELF */
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.textbox {
+    background-color: rgb(86, 52, 52);
+
+    /* need height and width later for when
+    this becomes a proper parent */
+
+}
+
+.scrollDown {
+    background-color: rgb(184, 166, 201);
+}
+
+#rightbox {
+    background-color: aquamarine;
+
+    height: 60%;
+    width: 73%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    /* research flex; figure out why this works */
+    display:flex;
+
+}
+
+
+#rightbox .marquee {
+    font-size: 3vh;
+    background-color: green;
+    position: absolute;
+
+    height: 15%;
+}
+
+#siteHeader {
+    position: absolute;
+    margin: 0;
+
+    top: 12%;
+    right: 0;
+
+    width: 73%;
+    height: 30%;
+
+}
+
+.marquee p {
+    animation: marquee 17s linear infinite;
+    position: absolute;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX( 0% );
+    }
+
+    to {
+        transform: translateX( -50% );
+    }
+    
+}
+
+#rightbox .scrollDown {
+    background-color: blueviolet;
+
+    position: relative;
+    width: 35%;
+}
+
+#rightbox .textbox{
+    background-color: goldenrod;
+
+    position: relative;
+    width: 65%;
+}
+
+
+/*  
+    fixed -- wrt viewport
+    absolute -- beyond, will search for non-default parent. if not, viewport
+    static -- default
+    sticky -- normal until some point, will be fixed
+ */
+
+ @media (max-width: 1000px) {
+    #homeAvatar {
+        width: 50%;
+        content: url("assets/images/kirigiriMobile.webp");
+        translate: 0% 17%;
+        transform: rotate(25deg);
+    }
+
+    #header {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    #rightbox {
+        height: 60%;
+        width: 78%;
+    }
+
+    #rightbox .marquee {
+        height: 20%;
+        font-size: 2.5vh;
+    }
+
+    #siteHeader {
+        top: 16%;
+    }
+    
+}
