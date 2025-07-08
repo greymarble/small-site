@@ -44,7 +44,6 @@ body {
 
     /* need height and width later for when
     this becomes a proper parent */
-
 }
 
 .scrollDown {
@@ -83,7 +82,7 @@ body {
 #siteHeader {
     position: absolute;
 
-    right: 0;
+    left: 46vw;
     top: 35vh;
 
     width: 54vw;
@@ -107,7 +106,6 @@ body {
 
     margin-top: 2vh;
     margin-bottom: 2vh;
-    
 }
 
 @keyframes marquee {
@@ -130,11 +128,18 @@ body {
 
 #rightbox .textbox{
     background-color: goldenrod;
+    position: absolute;
 
-    position: relative;
     width: 65%;
-}
 
+    top: 8vw;
+    bottom: 0;
+    right: 0;
+    
+
+    padding: 30px;
+    box-sizing: border-box;
+}
 
 /*  
     relative -- 
@@ -167,14 +172,20 @@ body {
         font-size: 2.5vh;
     }
 
+    #rightbox .textbox{
+        font-size: 80%;
+        padding: 40px 30px 60px 30px;
+    }
+
     #siteHeader {
+        left: 43vw;
         top: 25vh;
         width: 57vw;
     }
 
     #siteHeader p {
         left: 21%;
-        bottom: -23%;
+        bottom: -28%;
     }
     
 }
