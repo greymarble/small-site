@@ -21,6 +21,7 @@ body {
     padding: 0;
 }
 
+
 #homeAvatar {
     transform: rotate(20deg);
     width: 40%;
@@ -238,6 +239,7 @@ img[src="assets/blinkies, stickers, stamps, etc./krisPin.webp"] {
 
 
 #rightbox .textbox{
+    overflow: scroll;
     font-size: 120%;
     font-family: DT-Sans, Arial, Helvetica, sans-serif;
 
@@ -255,8 +257,34 @@ img[src="assets/blinkies, stickers, stamps, etc./krisPin.webp"] {
     box-sizing: border-box;
 }
 
+/* DIVIDER */
+
+.headerdivider {
+    margin:0;
+    
+    overflow: hidden;
+    position: absolute;
+    background-color: aquamarine;
+
+    bottom: 240px;
+    left: 0;
+    width: 100%;
+    height: 2.3%;
+}
+
+img[src="assets/blinkies, stickers, stamps, etc./blueDivider.gif"] {
+    position: absolute;
+
+    bottom:0;
+    left: 0;
+    width: 100%;
+
+    transform: translateY(20px);
+}
+/* DIVIDER */
+
 /*  
-    relative -- 
+    relative -- 8
     fixed -- stuck on your screen
     absolute -- beyond, will search for non-default parent. if not, viewport
     static -- default
