@@ -19,6 +19,8 @@
 body {
     margin: 0;
     padding: 0;
+
+    background-image: url('assets/blinkies\,\ stickers\,\ stamps\,\ etc./thesnowgraverr.gif');
 }
 
 
@@ -31,13 +33,15 @@ body {
 }
 
 #header {
-    background-color: cadetblue;
+    position: absolute;
+    right:0;
+    top:0;
+
+    background-image: url('assets/images/blackSorrow.jpg');
+    background-size: cover;
     
     height: 75vh;
     width: 100vw;
-
-    position: relative;
-    top:0;
 }
 
 .marquee {
@@ -79,7 +83,7 @@ body {
 
 #rightbox .marquee {
     font-size: 3vh;
-    background-color: green;
+    background-color: rgb(131, 110, 181);
     position: absolute;
 
     height: 15%;
@@ -201,7 +205,7 @@ img[src="assets/blinkies, stickers, stamps, etc./krisPin.webp"] {
     /* scrollign! !! yes!! */
     overflow: scroll;
 
-    background-color: blueviolet;
+    background-color: rgb(89, 159, 159);
 
     position: relative;
     width: 35%;
