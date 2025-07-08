@@ -61,7 +61,6 @@ body {
 
     /* research flex; figure out why this works */
     display: flex;
-
 }
 
 
@@ -125,14 +124,14 @@ img[src="assets/images/arrow.webp"] {
 }
 
 .marquee p {
-    animation: marquee 17s linear infinite;
+    animation: Hmarquee 17s linear infinite;
     position: absolute;
 
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
 
-@keyframes marquee {
+@keyframes Hmarquee {
     from {
         transform: translateX( 0% );
     }
@@ -155,7 +154,6 @@ img[src="assets/images/arrow.webp"] {
 
 #rightbox .scrollDownContainer .scrollDown { 
     position: absolute;
-    background-color: bisque;
 
     box-sizing: border-box;
     margin-top: 20%;
@@ -163,8 +161,25 @@ img[src="assets/images/arrow.webp"] {
     left: 50%;
     transform:translateX(-50%);
 
-    width: 80%;
-    height: 100%;
+    width: 78%;
+    height: 200%;
+}
+
+
+#rightbox .scrollDownContainer .scrollDown .blinkies {
+    position: relative;
+    width: 100%;
+
+    margin-bottom: 10px;
+
+}
+
+#rightbox .scrollDownContainer .scrollDown .tinypixel {
+    position: relative;
+    width: 24%;
+
+    margin-bottom: 10px;
+
 }
 
 
@@ -191,12 +206,14 @@ img[src="assets/images/arrow.webp"] {
     sticky -- normal until some point, will be fixed
  */
 
- @media (max-width: 900px) {
+ @media (max-width: 800px) {
     #homeAvatar {
         width: 50%;
-        content: url("assets/images/kirigiriMobile.webp");
-        translate: 0% 40%;
-        transform: rotate(25deg);
+        content: url("assets/images/pekoyama.webp");
+        width: 33%;
+
+        translate: 5% 70%;
+        transform: rotate(0deg);
     }
 
     #header {
