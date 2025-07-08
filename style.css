@@ -2,6 +2,18 @@
     font-family: NonstopDebate;
     src: url(assets/fonts/NonstopDebatecounter-Regular.ttf)
 }
+
+@font-face {
+    font-family: DT-Sans;
+    src: url(assets/fonts/DTM-Sans.otf)
+}
+
+
+@font-face {
+    font-family: DT-Mono;
+    src: url(assets/fonts/DTM-Mono.otf)
+}
+
 /* BEM???? */
 
 body {
@@ -108,17 +120,59 @@ img[src="assets/images/arrow.webp"] {
   bottom: 0;
 }
 
+
+img[src="assets/blinkies, stickers, stamps, etc./noellePin.webp"] {
+    position: absolute;
+
+    width: 8vw;
+    height: 8vw;
+
+    bottom: 0;
+    left: 22vw;
+
+    transform: translateY(50px);
+}
+
+img[src="assets/blinkies, stickers, stamps, etc./darkheartPin.webp"] {
+    position: absolute;
+
+
+    width: 7vw;
+    height: 6vw;
+
+    bottom: 0;
+    right: 0;
+    margin-right: 3px;
+
+    transform: translateY(50px);
+}
+
+img[src="assets/blinkies, stickers, stamps, etc./krisPin.webp"] {
+    position: absolute;
+
+    width: 6vw;
+    height: 7vw;
+
+    bottom: 0;
+    left: -3.5vw;
+    margin-right: 3px;
+
+    transform: translateY(50px);
+}
+
+
+
 @keyframes arrowAnim {
     0% {
-        transform: translateY(10px);
+        transform: translateY(15px);
     }
 
     50% {
-        transform: translateY(30px);
+        transform: translateY(35px);
     }
 
     100% {
-        transform: translateY(10px);
+        transform: translateY(15px);
     }
     
 }
@@ -162,7 +216,7 @@ img[src="assets/images/arrow.webp"] {
     transform:translateX(-50%);
 
     width: 78%;
-    height: 200%;
+    height: 150%;
 }
 
 
@@ -184,6 +238,9 @@ img[src="assets/images/arrow.webp"] {
 
 
 #rightbox .textbox{
+    font-size: 120%;
+    font-family: DT-Sans, Arial, Helvetica, sans-serif;
+
     background-color: goldenrod;
     position: absolute;
 
@@ -194,7 +251,7 @@ img[src="assets/images/arrow.webp"] {
     right: 0;
     
 
-    padding: 30px;
+    padding: 15px 30px 20px 30px;
     box-sizing: border-box;
 }
 
